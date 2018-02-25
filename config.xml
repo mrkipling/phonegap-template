@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="10000" id="com.phonegap.template" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PhoneGap Application Template</name>
+    <description>
+        A template for a PhoneGap application.
+    </description>
+    <author email="website@bradabrahams.co.uk" href="https://github.com/mrkipling">
+        Bradley Abrahams
+    </author>
+    <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="DisallowOverscroll" value="true" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="16" />
+        <icon density="mdpi" src="www/res/mipmap-mdpi/icon.png" />
+        <icon density="hdpi" src="www/res/mipmap-hdpi/icon.png" />
+        <icon density="xhdpi" src="www/res/mipmap-xhdpi/icon.png" />
+        <icon density="xxhdpi" src="www/res/mipmap-xxhdpi/icon.png" />
+        <icon density="xxxhdpi" src="www/res/mipmap-xxxhdpi/icon.png" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.2" />
+</widget>

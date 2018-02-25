@@ -1,0 +1,66 @@
+/* Customisable variables */
+
+$numCols: 12;
+$verticalMargin: 10px;
+$horizontalMargin: 1.6%;
+
+/* Grid setup */
+
+.container {
+  margin: 0 auto;
+  max-width: $siteWidth-max;
+}
+
+.row {
+  clear: both;
+  padding: 0;
+  margin: 0;
+  zoom: 1;
+}
+
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row:after {
+  clear: both;
+}
+
+.col {
+  display: block;
+  float: left;
+  margin: $verticalMargin 0 $verticalMargin $horizontalMargin;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+@function calculateBlock ($number: 1) {
+  /* find base width of individual columns - set margin */
+  $calc: (100% / $numCols * $number) - $horizontalMargin;
+  /* divide margin by num of columns */
+  $marginDivide: $horizontalMargin / $numCols;
+  /* return width of block by base width calculated plus margin divisible * block number */
+  @return $calc + ($marginDivide * $number);
+}
+
+@for $i from 1 to $numCols + 1 {
+  $width: calculateBlock($i);
+  .col#{$i} { width: $width; }
+}
+
+/* Breakpoint: mobile / full-width */
+
+@below xs {
+  .col {
+    margin: $verticalMargin 0;
+    width: 100%;
+  }
+}

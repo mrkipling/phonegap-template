@@ -1,0 +1,36 @@
+/*--- site widths ---*/
+
+$siteWidth-min: 320px;
+$siteWidth-max: 1140px;
+
+/*--- colors ---*/
+
+$color-text: #444;
+$color-text-light: #999;
+
+$color-anchor: #1856ff;
+$color-anchor-hover: #0030b1;
+$color-anchor-visited: #980ce8;
+$color-anchor-active: #ff0302;
+
+$color-error: #ff0302;
+
+/*--- fonts ---*/
+
+$fontFamily: Arial, Helvetica, sans-serif;
+$fontFamily-heading: Arial, Helvetica, sans-serif;
+
+$fontSize-tiny: 10px;
+$fontSize-smaller: 12px;
+$fontSize-small: 14px;
+$fontSize-regular: 16px;
+$fontSize-large: 18px;
+$fontSize-larger: 22px;
+$fontSize-huge: 30px;
+
+$fontSize-h1: 30px;
+$fontSize-h2: 26px;
+$fontSize-h3: 22px;
+$fontSize-h4: 20px;
+$fontSize-h5: 18px;
+$fontSize-h6: 16px;

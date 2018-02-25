@@ -1,0 +1,170 @@
+/* position */
+
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+
+/* margin */
+
+.u-m {
+  &0 { margin: 0; }
+
+  &b {
+    margin-bottom: 10px;
+    &--small { margin-bottom: 5px; }
+    &--large { margin-bottom: 20px; }
+    &--huge { margin-bottom: 40px; }
+    &0 { margin-bottom: 0; }
+  }
+
+  &l {
+    margin-left: 10px;
+    &--small { margin-left: 5px; }
+    &--large { margin-left: 20px; }
+    &--huge { margin-left: 40px; }
+    &0 { margin-left: 0; }
+  }
+
+  &r {
+    margin-right: 10px;
+    &--small { margin-right: 5px; }
+    &--large { margin-right: 20px; }
+    &--huge { margin-right: 40px; }
+    &0 { margin-right: 0; }
+  }
+
+  &t {
+    margin-top: 10px;
+    &--small { margin-top: 5px; }
+    &--large { margin-top: 20px; }
+    &--huge { margin-top: 40px; }
+    &0 { margin-top: 0; }
+  }
+}
+
+/* padding */
+
+.u-p {
+  &0 { padding: 0; }
+
+  &b {
+    padding-bottom: 10px;
+    &--small { padding-bottom: 5px; }
+    &--large { padding-bottom: 20px; }
+    &--huge { padding-bottom: 40px; }
+    &0 { padding-bottom: 0; }
+  }
+
+  &l {
+    padding-left: 10px;
+    &--small { padding-left: 5px; }
+    &--large { padding-left: 20px; }
+    &--huge { padding-left: 40px; }
+    &0 { padding-left: 0; }
+  }
+
+  &r {
+    padding-right: 10px;
+    &--small { padding-right: 5px; }
+    &--large { padding-right: 20px; }
+    &--huge { padding-right: 40px; }
+    &0 { padding-right: 0; }
+  }
+
+  &t {
+    padding-top: 10px;
+    &--small { padding-top: 5px; }
+    &--large { padding-top: 20px; }
+    &--huge { padding-top: 40px; }
+    &0 { padding-top: 0; }
+  }
+}
+
+/* text */
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+/* visibility */
+
+.u-hide {
+  display: none !important;
+}
+
+.u-show,
+.u-block {
+  display: block !important;
+}
+
+.u-hidden {
+  /* hide from both screenreaders and browsers: h5bp.com/u */
+  display: none !important;
+  visibility: hidden;
+}
+
+.u-visually-hidden {
+  /* hide only visually, but have it available for screenreaders: h5bp.com/v */
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.u-invisible {
+  /* hide visually and from screenreaders, but maintain layout */
+  visibility: hidden;
+}
+
+.u-mobile-only {
+  display: none;
+}
+
+@below xs {
+  .u-mobile-only {
+    display: block;
+  }
+
+  .u-desktop-only {
+    display: none;
+  }
+}
+
+/**
+ * clearfix
+ * http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified
+ */
+
+.u-cf:before,
+.u-cf:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.u-cf:after {
+  clear: both;
+}
+
+.u-cf {
+  zoom: 1;
+}
