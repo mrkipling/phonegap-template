@@ -53,6 +53,8 @@
   "dependencies": {
     "cordova-android": "^7.0.0",
     "cordova-plugin-inappbrowser": "~1.7.2",
+    "material-ui": "^1.0.0-beta.35",
+    "material-ui-icons": "^1.0.0-beta.35",
     "postcss-scss": "^1.0.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

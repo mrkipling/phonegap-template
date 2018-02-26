@@ -7,9 +7,9 @@
 
 :global {
   @import "_vars";    // customisable variables (fonts, colours, widths, etc.)
-  @import "reset";    // reset styling
   @import "base";     // base styling
-  @import "default";  // default styling of elements; probably first thing to be removed
   @import "grid";     // 12 column grid system
   @import "utils";    // utility classes (at end for specificity reasons)
+
+  @import "components/card";
 }
