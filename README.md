@@ -25,13 +25,13 @@
 * `npm install` (install dependencies)
 * `npm run build` (generate inital application files)
 
-# Test on device
+## Test on device
 
 * `npm run watch` (in one terminal; watches files and rebuilds on change)
 * `npm run serve` (in another terminal; serves files to the app)
 * Test on device using PhoneGap app
 
-# Run web app in browser
+## Run web app in browser
 
 * `npm run dev` (runs webpack dev server with hot-loading)
 * Visit `http://0.0.0.0:8080/`
