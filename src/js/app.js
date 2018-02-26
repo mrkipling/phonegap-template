@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import { AppContainer } from 'react-hot-loader';
+import { MuiThemeProvider } from 'material-ui/styles';
 import Reboot from 'material-ui/Reboot';
 
+import theme from './theme';
 import '../sass/site.scss';
 
 import App from './containers/App';
@@ -10,10 +13,10 @@ import App from './containers/App';
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>
-      <div>
+      <MuiThemeProvider theme={theme}>
         <Reboot />
         <Component />
-      </div>
+      </MuiThemeProvider>
     </AppContainer>,
     document.getElementById('app'),
   );
