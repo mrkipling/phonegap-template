@@ -7,6 +7,7 @@
 * Webpack
 * React, ES6+, SASS, etc. (uses `site-template-webpack`)
 * Material UI framework: https://material-ui-next.com/
+* Hygen for component code generation
 
 ## Scripts
 
