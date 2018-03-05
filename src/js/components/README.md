@@ -10,6 +10,3 @@ Place components here like so:
   * ComponentTwo
     * index.js
     * styles.scss
-
-`react-css-modules` is being used, so make sure that you import and configure it
-correctly.
