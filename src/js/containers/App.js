@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import AppBar from 'material-ui/AppBar';
-import Grid from 'material-ui/Grid';
-import Toolbar from 'material-ui/Toolbar';
-import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
-import IconButton from 'material-ui/IconButton';
-import MenuIcon from 'material-ui-icons/Menu';
-import Paper from 'material-ui/Paper';
+import AppBar from '@material-ui/core/AppBar';
+import Grid from '@material-ui/core/Grid';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import Paper from '@material-ui/core/Paper';
 
-import { withStyles } from 'material-ui/styles';
+import MenuIcon from '@material-ui/icons/Menu';
+
+import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
   root: {
@@ -40,7 +41,11 @@ function App(props) {
     <section className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton color="inherit" aria-label="Menu" className={classes.menuButton}>
+          <IconButton
+            color="inherit"
+            aria-label="Menu"
+            className={classes.menuButton}
+          >
             <MenuIcon />
           </IconButton>
           <Typography variant="title" color="inherit" className={classes.flex}>

@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { AppContainer } from 'react-hot-loader';
-import { MuiThemeProvider } from 'material-ui/styles';
-import Reboot from 'material-ui/Reboot';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import Reboot from '@material-ui/core/CssBaseline';
 
 import theme from './theme';
 import '../sass/site.scss';
